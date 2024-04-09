@@ -3,15 +3,16 @@
   width: 100%;
   background: #444444;
   z-index: 10;
+  height: 10vh;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10vh;
-  padding: 1rem;
+  padding-block: 1rem;
   flex-wrap: wrap;
+  height: 100%;
 }
 
 .logo {
@@ -21,7 +22,7 @@
 .logo img {
   height: 100%;
   filter: invert();
-  max-height: 10vh;
+  max-height: 7vh;
 }
 
 .socials {
@@ -29,7 +30,19 @@
   gap: 1rem;
 }
 
+.socials > a {
+transition: 0.25s;
+}
+
+.socials > a:hover {
+  transform: scale(1.1);
+}
+
 @media (max-width: 600px) {
+.header {
+  height: 20vh;
+}
+
   .wrapper {
     height: auto;
     gap: 1rem;

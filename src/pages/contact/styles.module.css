@@ -1,3 +1,28 @@
 .contact {
   padding-top: 10vh;
+  display: flex;
+  min-height: 100vh;
+  min-height: 100dvh;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact > div {
+  flex: 1;
+}
+
+.map {
+  height: 50vh;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding-top: 20vh;
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .map {
+    margin-top: 2vh;
+  }
 }
