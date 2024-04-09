@@ -1,0 +1,11 @@
+.button{
+  background: #333;
+  border: none;
+  padding: 1rem 2rem;
+  min-width: 260px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  font-family: monospace;
+}

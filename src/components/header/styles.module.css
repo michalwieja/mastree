@@ -1,0 +1,17 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background: #444;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
