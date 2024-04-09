@@ -11,8 +11,10 @@ const Header = () => {
     <div className={styles.header}>
       <HorizontalWrapper>
         <div className={styles.wrapper}>
-          <Link href={'/'}>
-            <div className={styles.logo}>MASTREE</div>
+          <Link href={'/'} className={styles.logo}>
+            <div className={styles.logo}>
+              <img src="./logo.png" alt="logo" />
+            </div>
           </Link>
           <div className={styles.socials}>
             {socials.map((social, index) => (
@@ -26,8 +28,8 @@ const Header = () => {
               </a>
             ))}
           </div>
-          <Link href={'/contact'}>
-            <EncryptButton/>
+          <Link href={'/contact'} className={styles.button}>
+            <EncryptButton label='Skontaktuj się z nami'/>
           </Link>
         </div>
       </HorizontalWrapper>

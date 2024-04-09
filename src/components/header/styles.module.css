@@ -1,17 +1,42 @@
 .header {
   position: fixed;
   width: 100%;
-  background: #444;
+  background: #444444;
+  z-index: 10;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10vh
+  height: 10vh;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 100%;
+}
+
+.logo img {
+  height: 100%;
+  filter: invert();
+  max-height: 10vh;
 }
 
 .socials {
   display: flex;
   gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    height: auto;
+    gap: 1rem;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
 }

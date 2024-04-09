@@ -5,13 +5,12 @@ import { motion } from 'framer-motion'
 
 import styles from './styles.module.css'
 
-const TARGET_TEXT = 'Skontaktuj się z nami'
 const CYCLES_PER_LETTER = 2
 const SHUFFLE_TIME = 20
 
 const CHARS = '!@#$%^&*():{};|,.<>/?'
 
-const EncryptButton = () => {
+const EncryptButton = ({ label='Zobacz więcej' }) => {
   const intervalRef = useRef(null)
 
   const [text, setText] = useState('!@#$%^&*():{};|,.<>/?')
@@ -20,7 +19,7 @@ const EncryptButton = () => {
     let pos = 0
 
     intervalRef.current = setInterval(() => {
-      const scrambled = TARGET_TEXT.split('')
+      const scrambled = label.split('')
         .map((char, index) => {
           if (pos / CYCLES_PER_LETTER > index) {
             return char
@@ -36,7 +35,7 @@ const EncryptButton = () => {
       setText(scrambled)
       pos++
 
-      if (pos >= TARGET_TEXT.length * CYCLES_PER_LETTER) {
+      if (pos >= label.length * CYCLES_PER_LETTER) {
         stopScramble()
       }
     }, SHUFFLE_TIME)
@@ -45,7 +44,7 @@ const EncryptButton = () => {
   const stopScramble = () => {
     clearInterval(intervalRef.current || undefined)
 
-    setText(TARGET_TEXT)
+    setText(label)
   }
 
   useEffect(() => {

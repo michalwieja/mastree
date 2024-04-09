@@ -40,10 +40,7 @@ module.exports = {
       'single',
     ],
     'no-multiple-empty-lines': [
-      'error',
-      {
-        max: 1,
-      },
+      'error',{ max: 1 },
     ],
     'prefer-const': 'error',
     'comma-dangle': [
