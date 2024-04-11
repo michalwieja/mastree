@@ -1,0 +1,13 @@
+.antresole {
+  padding-top: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 600px) {
+  .antresole {
+    padding-top: 20vh;
+  }
+}

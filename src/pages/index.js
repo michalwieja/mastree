@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import React from 'react'
+import Link from 'next/link'
 
 import styles from './styles.module.css'
 
@@ -23,12 +24,11 @@ export default function Home() {
           className={clsx(styles.slide, slide.id===activeId && styles.active)}
           onClick={()=>handleClick(slide.id)}
           style={{
-            backgroundImage: `url(${slide.link})`,
+            backgroundImage: `url(${slide.url})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover',
           }}
         >
-          {/* <img className={styles.image} src={slide.link} alt={slide.title} /> */}
           <div className={styles.content}>
             <div className={styles.title}>{slide.title}</div>
             { slide.id===activeId && (<>
@@ -40,7 +40,9 @@ export default function Home() {
               >
                 {slide.desc}
               </motion.div>
-              <EncryptButton/>
+              <Link href={slide.link}>
+                <EncryptButton/>
+              </Link>
             </>
             )}
           </div>
