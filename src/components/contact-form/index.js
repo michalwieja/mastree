@@ -23,10 +23,10 @@ function ContactForm() {
 
     try {
       const response = await emailjs.sendForm(
-        process.env.NEXT_PUBLIC_EMAIL_API_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAIL_API_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_EMAIL_API_SERVICE_ID || '',
+        process.env.NEXT_PUBLIC_EMAIL_API_TEMPLATE_ID || '',
         form.current,
-        { publicKey: process.env.NEXT_PUBLIC_EMAIL_API_PUBLIC },
+        { publicKey: process.env.NEXT_PUBLIC_EMAIL_API_PUBLIC || '' },
       )
       console.log('SUCCESS!', response)
       setSuccessMessage('Email Wysłany. Skontaktujemy się z Tobą!')

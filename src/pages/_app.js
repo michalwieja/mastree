@@ -13,7 +13,6 @@ export default function App({ Component, pageProps, router }) {
           key={router.route}
           initial={{ x: '-100%' }}
           animate={{ x: 0 }}
-          exit={{ x: '100%' }}
           transition={{ ease: 'linear' }}
         >
           <Component {...pageProps} />
