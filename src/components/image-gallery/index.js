@@ -83,6 +83,7 @@ const ImageGallery = ({ photos }) => {
               &times;
             </span>
             <motion.img
+              key={photos[selectedPhotoIndex].src}
               src={photos[selectedPhotoIndex].src}
               alt={`Photo ${selectedPhotoIndex + 1}`}
               className={styles.enlargedPhoto}

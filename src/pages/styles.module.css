@@ -72,7 +72,7 @@ cursor: pointer;
 @media (max-width: 600px) {
   .wrapper {
     flex-direction: column;
-    padding-top: 20vh;
+    padding-top: max(130px, 16vh);
   }
 
   .slide.active {

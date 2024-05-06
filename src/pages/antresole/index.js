@@ -5,7 +5,7 @@ import styles from './styles.module.css'
 
 import ImageGallery from '@/components/image-gallery'
 import HorizontalWrapper from '@/components/horizontal-wrapper'
-import { anstrsole } from '@/config'
+import { antresole } from '@/config'
 
 const Antresole = () => {
 
@@ -19,7 +19,7 @@ const Antresole = () => {
           <h1>Antresole</h1>
           <div/>
         </div>
-        <ImageGallery photos={anstrsole}/>
+        <ImageGallery photos={antresole}/>
       </div>
     </HorizontalWrapper>
   )

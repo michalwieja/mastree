@@ -58,7 +58,7 @@ export const slides = [
   },
 ]
 
-export const anstrsole = [
+export const antresole = [
   { src: 'https://source.unsplash.com/A5rCN8626Ck' },
   { src: 'https://source.unsplash.com/JP23z_-dA74' },
   { src: 'https://source.unsplash.com/tKF04645K7I' },

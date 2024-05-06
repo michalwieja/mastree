@@ -41,6 +41,7 @@ transition: 0.25s;
 @media (max-width: 600px) {
 .header {
   height: 20vh;
+  height: max(16vh, 130px);
 }
 
   .wrapper {
