@@ -13,7 +13,9 @@ const Header = () => {
         <div className={styles.wrapper}>
           <Link href={'/'} className={styles.logo}>
             <div className={styles.logo}>
-              <img src="./logo.png" alt="logo" />
+              <picture>
+                <img src="./logo.png" alt="logo" />
+              </picture>
             </div>
           </Link>
           <div className={styles.socials}>

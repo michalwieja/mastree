@@ -30,7 +30,9 @@ export default function Home() {
           }}
         >
           <div className={styles.content}>
-            <div className={styles.title}>{slide.id===activeId ? slide.title: slide.shortTitle}</div>
+            <div className={styles.title}>
+              {slide.id===activeId ? slide.title: slide.shortTitle}
+            </div>
             { slide.id===activeId && (<>
               <motion.div
                 initial={{ opacity: 0 }}

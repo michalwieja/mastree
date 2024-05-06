@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { Facebook, Instagram, Mail, Phone } from 'lucide-react'
 
 export const socials =  [

@@ -22,16 +22,14 @@ function ContactForm() {
     }
 
     try {
-      const response = await emailjs.sendForm(
+      await emailjs.sendForm(
         process.env.NEXT_PUBLIC_EMAIL_API_SERVICE_ID || '',
         process.env.NEXT_PUBLIC_EMAIL_API_TEMPLATE_ID || '',
         form.current,
         { publicKey: process.env.NEXT_PUBLIC_EMAIL_API_PUBLIC || '' },
       )
-      console.log('SUCCESS!', response)
       setSuccessMessage('Email Wysłany. Skontaktujemy się z Tobą!')
     } catch (error) {
-      console.error('FAILED...', error)
       setErrorMessage('Nie udało się wysłać wiadomości. Spróbuj ponownie później.')
     }
     setLoading(false)

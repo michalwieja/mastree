@@ -63,11 +63,13 @@ const ImageGallery = ({ photos }) => {
           className={styles.thumbnail}
           onClick={() => openLightbox(index)}
         >
-          <img
-            src={photo.src}
-            alt={`Photo ${index + 1}`}
-            className={styles.img}
-          />
+          <picture>
+            <img
+              src={photo.src}
+              alt={`Photo ${index + 1}`}
+              className={styles.img}
+            />
+          </picture>
         </div>
       ))}
       <AnimatePresence>

@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useCallback } from 'react'
 import { motion } from 'framer-motion'
 
 import styles from './styles.module.css'
@@ -15,7 +15,13 @@ const EncryptButton = ({ label='Zobacz więcej' }) => {
 
   const [text, setText] = useState('!@#$%^&*():{};|,.<>/?')
 
-  const scramble = () => {
+  const stopScramble = useCallback(() => {
+    clearInterval(intervalRef.current || undefined)
+
+    setText(label)
+  },[label])
+
+  const scramble = useCallback(() => {
     let pos = 0
 
     intervalRef.current = setInterval(() => {
@@ -39,20 +45,14 @@ const EncryptButton = ({ label='Zobacz więcej' }) => {
         stopScramble()
       }
     }, SHUFFLE_TIME)
-  }
-
-  const stopScramble = () => {
-    clearInterval(intervalRef.current || undefined)
-
-    setText(label)
-  }
+  },[label, stopScramble])
 
   useEffect(() => {
     scramble()
     return () => {
       stopScramble()
     }
-  }, [])
+  }, [scramble, stopScramble])
 
   return (
     <motion.button
