@@ -58,13 +58,17 @@ const ImageGallery = ({ photos }) => {
   return (
     <div className={styles.gallery}>
       {photos.map((photo, index) => (
-        <img
+        <div
           key={index}
-          src={photo.src}
-          alt={`Photo ${index + 1}`}
           className={styles.thumbnail}
           onClick={() => openLightbox(index)}
-        />
+        >
+          <img
+            src={photo.src}
+            alt={`Photo ${index + 1}`}
+            className={styles.img}
+          />
+        </div>
       ))}
       <AnimatePresence>
         {selectedPhotoIndex !== null && (

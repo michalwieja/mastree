@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 
 import Header from '@/components/header'
+import Footer from '@/components/footer'
 
 import '@/styles/globals.css'
 
@@ -18,6 +19,9 @@ export default function App({ Component, pageProps, router }) {
           <Component {...pageProps} />
         </motion.div>
       </AnimatePresence>
+      {router.pathname !== '/' && (
+        <Footer/>
+      )}
     </>
   )
 }
