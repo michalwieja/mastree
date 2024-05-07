@@ -8,7 +8,7 @@ import ImageGallery from '@/components/image-gallery'
 import HorizontalWrapper from '@/components/horizontal-wrapper'
 
 const Bawialnie = () => {
-  const data = galleryConfig.find(gallery => gallery.id === '2')
+  const data = galleryConfig.find(gallery => gallery.id === '3')
 
   return (
     <HorizontalWrapper>
@@ -17,7 +17,7 @@ const Bawialnie = () => {
           <Link className={styles.back} href={'/'}>
             <ChevronLeft height={48} width={48} />
           </Link>
-          <h1>Bawialnie</h1>
+          <h1>Stolarka</h1>
           <div/>
         </div>
         <ImageGallery data={data}/>

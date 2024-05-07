@@ -4,8 +4,10 @@ import { ChevronRight, ChevronLeft } from 'lucide-react'
 
 import styles from './styles.module.css'
 
-const ImageGallery = ({ photos }) => {
+const ImageGallery = ({ data }) => {
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(null)
+
+  const { photos, title }=data
 
   const openLightbox = (index) => {
     setSelectedPhotoIndex(index)
@@ -17,13 +19,13 @@ const ImageGallery = ({ photos }) => {
 
   const goToPrevious = () => {
     setSelectedPhotoIndex((prevIndex) =>
-      prevIndex === 0 ? photos.length - 1 : prevIndex - 1,
+      prevIndex === 0 ? photos[1600].length - 1 : prevIndex - 1,
     )
   }
 
   const goToNext = () => {
     setSelectedPhotoIndex((prevIndex) =>
-      prevIndex === photos.length - 1 ? 0 : prevIndex + 1,
+      prevIndex === photos[1600].length - 1 ? 0 : prevIndex + 1,
     )
   }
 
@@ -57,7 +59,7 @@ const ImageGallery = ({ photos }) => {
 
   return (
     <div className={styles.gallery}>
-      {photos.map((photo, index) => (
+      {photos[300].map((photo, index) => (
         <div
           key={index}
           className={styles.thumbnail}
@@ -65,7 +67,7 @@ const ImageGallery = ({ photos }) => {
         >
           <picture>
             <img
-              src={photo.src}
+              src={`/${title}/300/${photo}`}
               alt={`Photo ${index + 1}`}
               className={styles.img}
             />
@@ -75,6 +77,7 @@ const ImageGallery = ({ photos }) => {
       <AnimatePresence>
         {selectedPhotoIndex !== null && (
           <motion.div
+            key={photos[1600][selectedPhotoIndex]}
             className={styles.lightbox}
             variants={lightboxVariants}
             initial="hidden"
@@ -89,8 +92,7 @@ const ImageGallery = ({ photos }) => {
               &times;
             </span>
             <motion.img
-              key={photos[selectedPhotoIndex].src}
-              src={photos[selectedPhotoIndex].src}
+              src={`/${title}/1600/${photos[1600][selectedPhotoIndex]}`}
               alt={`Photo ${selectedPhotoIndex + 1}`}
               className={styles.enlargedPhoto}
               variants={slideVariants}
@@ -103,7 +105,7 @@ const ImageGallery = ({ photos }) => {
             />
             <div className={styles.infoBox}>
               <span>
-                {selectedPhotoIndex + 1} / {photos.length}
+                {selectedPhotoIndex + 1} / {photos[1600].length}
               </span>
             </div>
             <motion.button

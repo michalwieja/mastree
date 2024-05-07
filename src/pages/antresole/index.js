@@ -1,13 +1,14 @@
 import { ChevronLeft } from 'lucide-react'
 import Link from 'next/link'
 
+import galleryConfig from '../../../galleryConfig.json'
 import styles from './styles.module.css'
 
 import ImageGallery from '@/components/image-gallery'
 import HorizontalWrapper from '@/components/horizontal-wrapper'
-import { antresole } from '@/config'
 
 const Antresole = () => {
+  const data = galleryConfig.find(gallery => gallery.id === '1')
 
   return (
     <HorizontalWrapper>
@@ -19,7 +20,7 @@ const Antresole = () => {
           <h1>Antresole</h1>
           <div/>
         </div>
-        <ImageGallery photos={antresole}/>
+        <ImageGallery data={data}/>
       </div>
     </HorizontalWrapper>
   )

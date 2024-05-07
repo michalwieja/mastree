@@ -40,10 +40,14 @@ cursor: pointer;
   flex:15;
 }
 
+.slide.active .content {
+  padding: 3rem;
+}
+
 .content {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
-  bottom: 0rem;
+  bottom: 0;
   left: 0;
   right: 0;
   z-index: 2;

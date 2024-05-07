@@ -27,7 +27,7 @@ export const socials =  [
 export const slides = [
   {
     id: 1,
-    url: 'https://images.unsplash.com/photo-1611021061285-16c871740efa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+    url: '/antresole/1600/8D1A3506.jpg',
     title: 'Antresole drewniane',
     shortTitle: 'Antresole',
     desc: 'Potrzebujesz powiększyć przestrzeń? Oferujemy wykonanie antresoli drewnianych. Konsultujemy wspólnie Twoje potrzeby i doradzamy najlepsze rozwiązanie dla danej przestrzeni. Każda zabudowa jest wykonywana na wymiar. Pracujemy  z wykorzystaniem naturalnych materiałów: używamy drewna świerkowego oraz sklejki brzozowej. Zapraszamy do składania zapytań.',
@@ -35,7 +35,7 @@ export const slides = [
   },
   {
     id: 2,
-    url: 'https://images.unsplash.com/photo-1544164560-adac3045edb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+    url: '/bawialnie/1600/IMG20230329135013.jpg',
     title: 'Bawialnie drewniane / zabudowy specjalne',
     shortTitle: 'Bawialnie',
     desc: 'Prowadzisz bawialnie a może dopiero planujesz taka inwestycję? Chętnie wykonamy dla Ciebie i Twojego biznesu zabudowę drewnianą: domki drewniane, meble, małpie gaje, zjeżdżalnie drabinki i tym podobne. Nasze zabudowy wykonywane są zgodnie z polska normą dotyczącą placów zabaw PN-1176 Wykonujemy również meble ze sklejki brzozowej. Pracujemy  z wykorzystaniem naturalnych materiałów. Zapraszamy do składania zapytań.',
@@ -43,7 +43,7 @@ export const slides = [
   },
   {
     id: 3,
-    url: 'https://images.unsplash.com/photo-1611021061218-761c355ed331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+    url: '/stolarka/1600/4.jpg',
     title: 'Stolarka ogrodowo-budowlana',
     shortTitle: 'Stolarka',
     desc: 'Wykonujemy stolarkę ogrodową na indywidualne zamówienie. W naszej ofercie znajdują się tarasy, altany, zadaszenia tarasów, wiaty na samochody, wiaty śmietnikowe, domki narzędziowe. Pracujemy z wykorzystaniem drewna konstrukcyjnego suszonego komorowo – taki materiał jest stabilny i ma bardzo ograniczoną tendencję do odkształcania się czy pękania. Zapraszamy do składania zapytań.',
@@ -51,27 +51,10 @@ export const slides = [
   },
   {
     id: 4,
-    url: 'https://images.unsplash.com/photo-1553051021-9f94520a6cad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+    url: '/cnc/cnc.jpg',
     title: 'Usługi CNC / frezowanie, grawerowanie laserowe',
     shortTitle: 'CNC',
     desc: 'Posiadamy frezarkę cnc o polu roboczym 4 x 2 m oraz laser CNC o polu roboczym 1600x1200cm. Oferujemy usługi w oparciu o następujące materiały. Drewno, sklejka, mdf, osb, hdf, hpl, plexi, dibond. Zapraszamy do składania zapytań.',
     link: '/cnc',
   },
-]
-
-export const antresole = [
-  { src: 'https://source.unsplash.com/A5rCN8626Ck' },
-  { src: 'https://source.unsplash.com/JP23z_-dA74' },
-  { src: 'https://source.unsplash.com/tKF04645K7I' },
-  { src: 'https://source.unsplash.com/whAcmaw6cd4' },
-  { src: 'https://source.unsplash.com/wbIw84HTI8w' },
-  { src: 'https://source.unsplash.com/3iUkzH6yhjE' },
-  { src: 'https://source.unsplash.com/8cQpL8kGqso' },
-  { src: 'https://source.unsplash.com/A5rCN8626Ck' },
-  { src: 'https://source.unsplash.com/JP23z_-dA74' },
-  { src: 'https://source.unsplash.com/tKF04645K7I' },
-  { src: 'https://source.unsplash.com/whAcmaw6cd4' },
-  { src: 'https://source.unsplash.com/wbIw84HTI8w' },
-  { src: 'https://source.unsplash.com/3iUkzH6yhjE' },
-  { src: 'https://source.unsplash.com/8cQpL8kGqso' },
 ]
