@@ -10,7 +10,7 @@ export const socials =  [
   {
     label: 'Instagram',
     icon: <Instagram />,
-    url: 'https://www.instagram.com/',
+    url: 'https://www.instagram.com/antresola_/?igsh=cWIweWkyMTV6ZW92',
   },
   {
     label: 'Email',
