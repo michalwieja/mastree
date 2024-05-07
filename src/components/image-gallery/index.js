@@ -7,7 +7,7 @@ import styles from './styles.module.css'
 const ImageGallery = ({ data }) => {
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(null)
 
-  const { photos, title }=data
+  const { photos, title } = data
 
   const openLightbox = (index) => {
     setSelectedPhotoIndex(index)
