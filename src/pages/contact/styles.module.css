@@ -11,8 +11,9 @@
   flex: 1;
 }
 
-.map {
-  height: 50vh;
+.photo {
+  max-height: 600px;
+  overflow: hidden;
 }
 
 @media (max-width: 600px) {
