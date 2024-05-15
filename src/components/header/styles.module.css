@@ -18,12 +18,15 @@
 
 .logo {
   height: 100%;
+  display: contents;
 }
 
 .logo img {
   height: 100%;
   filter: invert();
   width: auto;
+  max-height: 70px;
+  max-width: 180px;
 }
 
 .socials {
