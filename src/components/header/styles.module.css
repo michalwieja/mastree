@@ -4,6 +4,7 @@
   background: #444444;
   z-index: 10;
   height: 10vh;
+  min-height: 100px;
 }
 
 .wrapper {
@@ -22,7 +23,7 @@
 .logo img {
   height: 100%;
   filter: invert();
-  max-height: 7vh;
+  width: auto;
 }
 
 .socials {
@@ -45,7 +46,6 @@ transition: 0.25s;
 }
 
   .wrapper {
-    height: auto;
     gap: 1rem;
   }
 

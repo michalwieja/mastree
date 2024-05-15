@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useCallback, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronRight, ChevronLeft } from 'lucide-react'
 
@@ -13,21 +13,39 @@ const ImageGallery = ({ data }) => {
     setSelectedPhotoIndex(index)
   }
 
-  const closeLightbox = () => {
+  const closeLightbox = useCallback(() => {
     setSelectedPhotoIndex(null)
-  }
+  },[])
 
-  const goToPrevious = () => {
+  const goToPrevious = useCallback(() => {
     setSelectedPhotoIndex((prevIndex) =>
       prevIndex === 0 ? photos[1600].length - 1 : prevIndex - 1,
     )
-  }
+  },[photos])
 
-  const goToNext = () => {
+  const goToNext = useCallback(() => {
     setSelectedPhotoIndex((prevIndex) =>
       prevIndex === photos[1600].length - 1 ? 0 : prevIndex + 1,
     )
-  }
+  },[photos])
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        closeLightbox()
+      } else if (event.key === 'ArrowRight') {
+        goToNext()
+      } else if (event.key === 'ArrowLeft') {
+        goToPrevious()
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [selectedPhotoIndex, closeLightbox, goToNext, goToPrevious])
 
   const lightboxVariants = {
     hidden: {
