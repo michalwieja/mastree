@@ -7,7 +7,7 @@ import Link from 'next/link'
 import styles from './styles.module.css'
 
 import { slides } from '@/config'
-import EncryptButton from '@/components/encrypt-button'
+import Button from '@/components/button'
 
 export default function Home() {
   const [activeId, setActiveId] = useState(null)
@@ -43,7 +43,7 @@ export default function Home() {
                 {slide.desc}
               </motion.div>
               <Link href={slide.link}>
-                <EncryptButton/>
+                <Button/>
               </Link>
             </>
             )}

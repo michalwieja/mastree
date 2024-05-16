@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import HorizontalWrapper from '../horizontal-wrapper'
 import styles from './styles.module.css'
-import EncryptButton from '../encrypt-button'
+import Button from '../button'
 
 import { socials } from '@/config'
 
@@ -31,7 +31,7 @@ const Header = () => {
             ))}
           </div>
           <Link href={'/contact'} className={styles.button}>
-            <EncryptButton label='Skontaktuj się z nami'/>
+            <Button label='Skontaktuj się z nami'/>
           </Link>
         </div>
       </HorizontalWrapper>

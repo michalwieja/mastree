@@ -5,7 +5,7 @@ export const socials =  [
   {
     label: 'Facebook',
     icon: <Facebook />,
-    url: 'https://www.facebook.com/profile.php?id=100063541803770',
+    url: 'https://m.facebook.com/p/Antresola-zabudowy-drewniane-100066710953623/?wtsid=rdr_0JcQUGb6TVavQUWmd&_rdr',
   },
   {
     label: 'Instagram',
