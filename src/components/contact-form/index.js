@@ -47,10 +47,11 @@ function ContactForm() {
     <div className={styles.contactForm}>
       <div className={styles.address}>
         <p>Maciej Dybula</p>
-        <p>Katowice, ul. Katowicka 1</p>
+        <p>ul. Kościuszki 229, 40-600 Katowice</p>
         <p>
           <a href={phone.url} target='_blank'>{phone.url}</a>
         </p>
+        <p>W przypadku chęci nawiązania współpracy, zachęcamy do kontaktu telefonicznego. Dzięki temu będziemy mogli szybko i efektywnie omówić wszystkie szczegóły oraz odpowiedzieć na Państwa pytania.</p>
       </div>
       <form ref={form} onSubmit={sendEmail}>
         <h3>Formularz kontaktowy</h3>

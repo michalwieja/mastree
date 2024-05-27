@@ -5,13 +5,15 @@ import styles from './styles.module.css'
 import Button from '../button'
 
 import { socials } from '@/config'
+import { useActiveId } from '@/context/active-id'
 
 const Header = () => {
+  const { setActiveId } = useActiveId()
   return (
     <div className={styles.header}>
       <HorizontalWrapper>
         <div className={styles.wrapper}>
-          <Link href={'/'} className={styles.logo}>
+          <Link href={'/'} className={styles.logo} onClick={()=>setActiveId(null)}>
             <div className={styles.logo}>
               <picture>
                 <img src="./logo-horizontal.png" alt="logo" />

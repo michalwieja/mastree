@@ -1,9 +1,9 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import Head from 'next/head'
 
-import Header from '@/components/header'
 import Footer from '@/components/footer'
-
+import Header from '@/components/header'
+import { ActiveIdProvider } from '@/context/active-id'
 import '@/styles/globals.css'
 
 export default function App({ Component, pageProps, router }) {
@@ -37,20 +37,22 @@ export default function App({ Component, pageProps, router }) {
         <meta name="twitter:description" content="Bawialnie, Antresole, Stolarka, Laser CNC, Frezowanie"/>
         <meta name="twitter:image" content="https://mastree.stronazen.pl/antresole/1600/8D1A3506.jpg"/>
       </Head>
-      <Header />
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={router.route}
-          initial={{ x: '-100%' }}
-          animate={{ x: 0 }}
-          transition={{ ease: 'linear' }}
-        >
-          <Component {...pageProps} />
-        </motion.div>
-      </AnimatePresence>
-      {router.pathname !== '/' && (
-        <Footer/>
-      )}
+      <ActiveIdProvider>
+        <Header />
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={router.route}
+            initial={{ x: '-100%' }}
+            animate={{ x: 0 }}
+            transition={{ ease: 'linear' }}
+          >
+            <Component {...pageProps} />
+          </motion.div>
+        </AnimatePresence>
+        {router.pathname !== '/' && (
+          <Footer/>
+        )}
+      </ActiveIdProvider>
     </>
   )
 }

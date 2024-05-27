@@ -1,5 +1,4 @@
 import clsx from 'clsx'
-import { useState } from 'react'
 import { motion } from 'framer-motion'
 import React from 'react'
 import Link from 'next/link'
@@ -8,9 +7,10 @@ import styles from './styles.module.css'
 
 import { slides } from '@/config'
 import Button from '@/components/button'
+import { useActiveId } from '@/context/active-id'
 
 export default function Home() {
-  const [activeId, setActiveId] = useState(null)
+  const { activeId, setActiveId } = useActiveId()
 
   const handleClick = (id) => {
     activeId === id ? setActiveId(null) : setActiveId(id)
