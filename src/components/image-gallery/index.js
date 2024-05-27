@@ -88,6 +88,7 @@ const ImageGallery = ({ data }) => {
               src={`/${title}/300/${photo}`}
               alt={`Photo ${index + 1}`}
               className={styles.img}
+              loading='lazy'
             />
           </picture>
         </div>

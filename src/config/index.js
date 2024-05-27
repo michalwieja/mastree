@@ -27,7 +27,7 @@ export const socials =  [
 export const slides = [
   {
     id: 1,
-    url: '/antresole/1600/8D1A3506.jpg',
+    url: '/antresole/1600/!1.jpg',
     title: 'Antresole drewniane',
     shortTitle: 'Antresole',
     desc: 'Potrzebujesz powiększyć przestrzeń? Oferujemy wykonanie antresoli drewnianych. Konsultujemy wspólnie Twoje potrzeby i doradzamy najlepsze rozwiązanie dla danej przestrzeni. Każda zabudowa jest wykonywana na wymiar. Pracujemy  z wykorzystaniem naturalnych materiałów: używamy drewna świerkowego oraz sklejki brzozowej. Zapraszamy do składania zapytań.',
@@ -43,7 +43,7 @@ export const slides = [
   },
   {
     id: 3,
-    url: '/stolarka/1600/4.jpg',
+    url: '/stolarka/1600/0a3128cf-b140-4153-ad6c-f7e912f7463e.jpg',
     title: 'Stolarka ogrodowo-budowlana/meblowa',
     shortTitle: 'Stolarka',
     desc: 'Wykonujemy stolarkę ogrodową na indywidualne zamówienie. W naszej ofercie znajdują się tarasy, altany, zadaszenia tarasów, wiaty na samochody, wiaty śmietnikowe, domki narzędziowe. Pracujemy z wykorzystaniem drewna konstrukcyjnego suszonego komorowo – taki materiał jest stabilny i ma bardzo ograniczoną tendencję do odkształcania się czy pękania. Zapraszamy do składania zapytań.',

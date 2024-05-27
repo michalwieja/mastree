@@ -12,10 +12,10 @@ const galleries = [
     id: '3',
     title: 'stolarka',
   },
-  // {
-  //   id: '4',
-  //   title: 'cnc',
-  // },
+  {
+    id: '4',
+    title: 'cnc',
+  },
 ]
 
 const res = galleries.map((gallery) => {
