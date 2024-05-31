@@ -16,6 +16,28 @@ export default function Home() {
     activeId === id ? setActiveId(null) : setActiveId(id)
   }
 
+  const SlideTitle = ({ slide, activeId }) => {
+    const isActive = slide.id === activeId
+    const hasSecondLine = slide.title2ndLine
+
+    return (
+      <div className={styles.title}>
+        {isActive ? (
+          hasSecondLine ? (
+            <div>
+              <div>{slide.title}</div>
+              <div>{slide.title2ndLine}</div>
+            </div>
+          ) : (
+            slide.title
+          )
+        ) : (
+          slide.shortTitle
+        )}
+      </div>
+    )
+  }
+
   return (
     <div className={styles.wrapper}>
       {slides.map((slide, index) => (
@@ -30,9 +52,7 @@ export default function Home() {
           }}
         >
           <div className={styles.content}>
-            <div className={styles.title}>
-              {slide.id===activeId ? slide.title: slide.shortTitle}
-            </div>
+            <SlideTitle slide={slide} activeId={activeId}/>
             { slide.id===activeId && (<>
               <motion.div
                 initial={{ opacity: 0 }}

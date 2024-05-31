@@ -44,7 +44,8 @@ export const slides = [
   {
     id: 3,
     url: '/stolarka/1600/0a3128cf-b140-4153-ad6c-f7e912f7463e.jpg',
-    title: 'Stolarka ogrodowo-budowlana/meblowa',
+    title: 'Stolarka ogrodowo-budowlana',
+    title2ndLine: 'Stolarka meblowa',
     shortTitle: 'Stolarka',
     desc: 'Wykonujemy stolarkę ogrodową na indywidualne zamówienie. W naszej ofercie znajdują się tarasy, altany, zadaszenia tarasów, wiaty na samochody, wiaty śmietnikowe, domki narzędziowe. Pracujemy z wykorzystaniem drewna konstrukcyjnego suszonego komorowo – taki materiał jest stabilny i ma bardzo ograniczoną tendencję do odkształcania się czy pękania. Zapraszamy do składania zapytań.',
     link: '/stolarka',

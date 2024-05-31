@@ -20,13 +20,13 @@ export default function App({ Component, pageProps, router }) {
         <meta name="theme-color" content="#ffffff"/>
 
         <title>Mastree - Bawialnie, Antresole, Stolarka, Laser CNC, Frezowanie</title>
-        <meta name="description" content="Bawialnie, Antresole, Stolarka, Laser CNC, Frezowanie"/>
+        <meta name="description" content="Specjalizujemy się w antresolach drewnianych, zabudowach bawialni, stolarce ogrodowej i meblowej oraz usługach CNC. Zapraszamy do zapytań"/>
 
         {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:url" content="https://mastree.pl"/>
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Bawialnie, Antresole, Stolarka, Laser CNC, Frezowanie"/>
-        <meta property="og:description" content="Bawialnie, Antresole, Stolarka, Laser CNC, Frezowanie"/>
+        <meta property="og:description" content="Specjalizujemy się w antresolach drewnianych, zabudowach bawialni, stolarce ogrodowej i meblowej oraz usługach CNC. Zapraszamy do zapytań"/>
         <meta property="og:image" content="https://mastree.stronazen.pl/antresole/1600/8D1A3506.jpg"/>
 
         {/* <!-- Twitter Meta Tags --> */}
@@ -34,7 +34,7 @@ export default function App({ Component, pageProps, router }) {
         <meta property="twitter:domain" content="mastree.pl"/>
         <meta property="twitter:url" content="https://mastree.pl"/>
         <meta name="twitter:title" content="Bawialnie, Antresole, Stolarka, Laser CNC, Frezowanie"/>
-        <meta name="twitter:description" content="Bawialnie, Antresole, Stolarka, Laser CNC, Frezowanie"/>
+        <meta name="twitter:description" content="Specjalizujemy się w antresolach drewnianych, zabudowach bawialni, stolarce ogrodowej i meblowej oraz usługach CNC. Zapraszamy do zapytań"/>
         <meta name="twitter:image" content="https://mastree.stronazen.pl/antresole/1600/8D1A3506.jpg"/>
       </Head>
       <ActiveIdProvider>
