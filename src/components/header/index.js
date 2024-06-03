@@ -16,7 +16,7 @@ const Header = () => {
           <Link href={'/'} className={styles.logo} onClick={()=>setActiveId(null)}>
             <div className={styles.logo}>
               <picture>
-                <img src="./logo-horizontal.png" alt="logo" />
+                <img src="/logo-horizontal.png" alt="logo" />
               </picture>
             </div>
           </Link>
