@@ -4,8 +4,11 @@ import { ChevronRight, ChevronLeft } from 'lucide-react'
 
 import styles from './styles.module.css'
 
+import useMobile from '@/hooks/useMobile'
+
 const ImageGallery = ({ data }) => {
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(null)
+  const isMobile = useMobile()
 
   const { photos, title } = data
 
@@ -19,15 +22,15 @@ const ImageGallery = ({ data }) => {
 
   const goToPrevious = useCallback(() => {
     setSelectedPhotoIndex((prevIndex) =>
-      prevIndex === 0 ? photos[1600].length - 1 : prevIndex - 1,
+      prevIndex === 0 ? photos[isMobile ? 300 : 1600].length - 1 : prevIndex - 1,
     )
-  },[photos])
+  },[photos, isMobile])
 
   const goToNext = useCallback(() => {
     setSelectedPhotoIndex((prevIndex) =>
-      prevIndex === photos[1600].length - 1 ? 0 : prevIndex + 1,
+      prevIndex === photos[isMobile ? 300 : 1600].length - 1 ? 0 : prevIndex + 1,
     )
-  },[photos])
+  },[photos, isMobile])
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -96,7 +99,7 @@ const ImageGallery = ({ data }) => {
       <AnimatePresence>
         {selectedPhotoIndex !== null && (
           <motion.div
-            key={photos[1600][selectedPhotoIndex]}
+            key={photos[isMobile ? 300 : 1600][selectedPhotoIndex]}
             className={styles.lightbox}
             variants={lightboxVariants}
             initial="hidden"
@@ -111,7 +114,7 @@ const ImageGallery = ({ data }) => {
               &times;
             </span>
             <motion.img
-              src={`/${title}/1600/${photos[1600][selectedPhotoIndex]}`}
+              src={`/${title}/${isMobile ? 300 : 1600}/${photos[isMobile ? 300 : 1600][selectedPhotoIndex]}`}
               alt={`Photo ${selectedPhotoIndex + 1}`}
               className={styles.enlargedPhoto}
               variants={slideVariants}
@@ -124,7 +127,7 @@ const ImageGallery = ({ data }) => {
             />
             <div className={styles.infoBox}>
               <span>
-                {selectedPhotoIndex + 1} / {photos[1600].length}
+                {selectedPhotoIndex + 1} / {photos[isMobile ? 300 : 1600].length}
               </span>
             </div>
             <motion.button
