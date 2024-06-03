@@ -87,6 +87,8 @@ cursor: pointer;
     padding: .5rem;
     height: auto;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+
   }
 
   .title {
@@ -95,6 +97,6 @@ cursor: pointer;
   }
 
   .desc {
-    display: none;
+    font-size: 1rem;
   }
 }

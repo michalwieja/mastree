@@ -30,7 +30,7 @@ export const slides = [
     url: '/antresole/1600/!1.jpg',
     title: 'Antresole drewniane',
     shortTitle: 'Antresole',
-    desc: 'Potrzebujesz powiększyć przestrzeń? Oferujemy wykonanie antresoli drewnianych. Konsultujemy wspólnie Twoje potrzeby i doradzamy najlepsze rozwiązanie dla danej przestrzeni. Każda zabudowa jest wykonywana na wymiar. Pracujemy  z wykorzystaniem naturalnych materiałów: używamy drewna świerkowego oraz sklejki brzozowej. Zapraszamy do składania zapytań.',
+    desc: 'Potrzebujesz powiększyć przestrzeń? Oferujemy wykonanie antresoli drewnianych. Konsultujemy wspólnie Twoje potrzeby i doradzamy najlepsze rozwiązanie dla danej przestrzeni. Każda zabudowa jest wykonywana na wymiar. Pracujemy z wykorzystaniem naturalnych materiałów: używamy drewna świerkowego oraz sklejki brzozowej. Zapraszamy do składania zapytań.',
     link: '/antresole',
   },
   {
@@ -38,7 +38,7 @@ export const slides = [
     url: '/bawialnie/1600/IMG20230329135013.jpg',
     title: 'Bawialnie drewniane / zabudowy specjalne',
     shortTitle: 'Bawialnie',
-    desc: 'Prowadzisz bawialnie a może dopiero planujesz taka inwestycję? Chętnie wykonamy dla Ciebie i Twojego biznesu zabudowę drewnianą: domki drewniane, meble, małpie gaje, zjeżdżalnie drabinki i tym podobne. Nasze zabudowy wykonywane są zgodnie z polska normą dotyczącą placów zabaw PN-1176 Wykonujemy również meble ze sklejki brzozowej. Pracujemy  z wykorzystaniem naturalnych materiałów. Zapraszamy do składania zapytań.',
+    desc: 'Prowadzisz bawialnię, a może dopiero planujesz taką inwestycję? Chętnie wykonamy dla Ciebie i Twojego biznesu zabudowę drewnianą: domki drewniane, meble, małpie gaje, zjeżdżalnie, drabinki i tym podobne. Nasze zabudowy wykonywane są zgodnie z polską normą dotyczącą placów zabaw PN-1176. Wykonujemy również meble ze sklejki brzozowej. Pracujemy z wykorzystaniem naturalnych materiałów. Zapraszamy do składania zapytań.',
     link: '/bawialnie',
   },
   {
@@ -55,7 +55,7 @@ export const slides = [
     url: '/cnc/cnc.jpg',
     title: 'Usługi CNC / frezowanie, grawerowanie laserowe',
     shortTitle: 'CNC',
-    desc: 'Posiadamy frezarkę cnc o polu roboczym 4 x 2 m oraz laser CNC o polu roboczym 1600x1200cm. Oferujemy usługi w oparciu o następujące materiały. Drewno, sklejka, mdf, osb, hdf, hpl, plexi, dibond. Zapraszamy do składania zapytań.',
+    desc: 'Oferujemy usługi frezowania oraz cięcia i grawerowania laserem. Zlecenia wykonujemy na maszynach CNC ( sterowanie numeryczne). Specjalizujemy się w materiałach drewnianych i drewnopodobnych oraz tworzywach sztucznych. Posiadamy swój park maszynowy dzięki czemu jesteśmy w stanie dotrzymywać terminów oraz zagwarantować najwyższą jakość. Posiadamy frezarkę o polu roboczym 4x2m oraz lasery 160x120 cm, 60x40 cm. Zapraszamy do składania zapytań.',
     link: '/cnc',
   },
 ]
