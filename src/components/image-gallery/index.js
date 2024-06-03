@@ -137,7 +137,7 @@ const ImageGallery = ({ data }) => {
                 goToPrevious()
               }}
             >
-              <ChevronLeft width={100} height={100}/>
+              <ChevronLeft width={isMobile ? 50 : 100} height={isMobile ? 50 : 100}/>
             </motion.button>
             <motion.button
               className={styles.nextButton}
@@ -146,7 +146,7 @@ const ImageGallery = ({ data }) => {
                 goToNext()
               }}
             >
-              <ChevronRight width={100} height={100}/>
+              <ChevronRight width={isMobile ? 50 : 100} height={isMobile ? 50 : 100}/>
             </motion.button>
           </motion.div>
         )}
