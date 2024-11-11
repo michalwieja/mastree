@@ -27,7 +27,7 @@ export const socials =  [
 export const slides = [
   {
     id: 1,
-    url: '/antresole/1600/!1.jpg',
+    url: '/antresole/1600/!1.webp',
     title: 'Antresole drewniane',
     shortTitle: 'Antresole',
     desc: 'Potrzebujesz powiększyć przestrzeń? Oferujemy wykonanie antresoli drewnianych. Konsultujemy wspólnie Twoje potrzeby i doradzamy najlepsze rozwiązanie dla danej przestrzeni. Każda zabudowa jest wykonywana na wymiar. Pracujemy z wykorzystaniem naturalnych materiałów: używamy drewna świerkowego oraz sklejki brzozowej. Zapraszamy do składania zapytań.',
@@ -35,7 +35,7 @@ export const slides = [
   },
   {
     id: 2,
-    url: '/bawialnie/1600/IMG20230329135013.jpg',
+    url: '/bawialnie/1600/IMG20230329135013.webp',
     title: 'Bawialnie drewniane / zabudowy specjalne',
     shortTitle: 'Bawialnie',
     desc: 'Prowadzisz bawialnię, a może dopiero planujesz taką inwestycję? Chętnie wykonamy dla Ciebie i Twojego biznesu zabudowę drewnianą: domki drewniane, meble, małpie gaje, zjeżdżalnie, drabinki i tym podobne. Nasze zabudowy wykonywane są zgodnie z polską normą dotyczącą placów zabaw PN-1176. Wykonujemy również meble ze sklejki brzozowej. Pracujemy z wykorzystaniem naturalnych materiałów. Zapraszamy do składania zapytań.',
@@ -43,7 +43,7 @@ export const slides = [
   },
   {
     id: 3,
-    url: '/stolarka/1600/0a3128cf-b140-4153-ad6c-f7e912f7463e.jpg',
+    url: '/stolarka/1600/0a3128cf-b140-4153-ad6c-f7e912f7463e.webp',
     title: 'Stolarka ogrodowo-budowlana',
     title2ndLine: 'Stolarka meblowa',
     shortTitle: 'Stolarka',
