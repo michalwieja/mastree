@@ -20,6 +20,9 @@ const Header = () => {
               </picture>
             </div>
           </Link>
+          <Link href="/eufunds" className={styles.euLink}>
+            Fundusze<br />Europejskie
+          </Link>
           <div className={styles.socials}>
             {socials.map((social, index) => (
               <a

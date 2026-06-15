@@ -5,31 +5,31 @@
 }
 
 .slide {
-  flex:1;
+  flex: 1;
   transition: 250ms ease;
-  position:relative;
+  position: relative;
 }
 
 .slide::before {
-  content:"";
-  position:absolute;
+  content: "";
+  position: absolute;
   inset: 0;
-  background:black;
+  background: black;
   opacity: 0.3;
-  z-index:1;
-  transition:inherit;
+  z-index: 1;
+  transition: inherit;
 }
 
 .slide:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 
 .slide:hover::before {
-  opacity:0;
+  opacity: 0;
 }
 
 .slide.active::before {
-  opacity:0;
+  opacity: 0;
 }
 
 .image {
@@ -37,7 +37,7 @@ cursor: pointer;
 }
 
 .slide.active {
-  flex:15;
+  flex: 15;
 }
 
 .slide.active .content {
@@ -80,7 +80,7 @@ cursor: pointer;
   }
 
   .slide.active {
-    flex:5;
+    flex: 5;
   }
 
   .content {
@@ -99,4 +99,6 @@ cursor: pointer;
   .desc {
     font-size: 1rem;
   }
+
+
 }
