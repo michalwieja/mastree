@@ -53,19 +53,24 @@
   gap: 1rem;
 }
 
-.socials > a {
-transition: 0.25s;
+.socials>a {
+  transition: 0.25s;
 }
 
-.socials > a:hover {
+.socials>a:hover {
   transform: scale(1.1);
 }
 
-@media (max-width: 600px) {
-.header {
-  height: 20vh;
-  height: max(16vh, 130px);
+.socials svg {
+  width: 32px;
+  height: 32px;
 }
+
+@media (max-width: 600px) {
+  .header {
+    height: 20vh;
+    height: max(16vh, 130px);
+  }
 
   .wrapper {
     gap: 1rem;
