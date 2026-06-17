@@ -10,13 +10,13 @@ import { useActiveId } from '@/context/active-id'
 const Header = () => {
   const { setActiveId } = useActiveId()
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <HorizontalWrapper>
-        <div className={styles.wrapper}>
+        <nav className={styles.wrapper}>
           <Link href={'/'} className={styles.logo} onClick={()=>setActiveId(null)}>
             <div className={styles.logo}>
               <picture>
-                <img src="/logo-horizontal.png" alt="logo" />
+                <img src="/logo-horizontal.png" alt="Mastree - strona główna" />
               </picture>
             </div>
           </Link>
@@ -30,6 +30,7 @@ const Header = () => {
                 href={social.url}
                 target={'_blank'}
                 rel={'noreferrer'}
+                aria-label={social.label}
               >
                 {social.icon}
               </a>
@@ -38,9 +39,9 @@ const Header = () => {
           <Link href={'/contact'} className={styles.button}>
             <Button label='Skontaktuj się z nami'/>
           </Link>
-        </div>
+        </nav>
       </HorizontalWrapper>
-    </div>
+    </header>
   )
 }
 

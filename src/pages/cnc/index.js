@@ -14,11 +14,10 @@ const LaserCNC = () => {
     <HorizontalWrapper>
       <div className={styles.cnc}>
         <div className={styles.header}>
-          <Link className={styles.back} href={'/'}>
+          <Link className={styles.back} href={'/'} aria-label="Powrót do strony głównej">
             <ChevronLeft height={48} width={48} />
           </Link>
           <h1>LaserCNC</h1>
-          <div/>
         </div>
         <ImageGallery data={data}/>
       </div>

@@ -38,17 +38,22 @@ export default function App({ Component, pageProps, router }) {
         <meta name="twitter:image" content="https://mastree.stronazen.pl/antresole/1600/8D1A3506.jpg"/>
       </Head>
       <ActiveIdProvider>
+        <a href="#main-content" className="skipLink">
+          Przejdź do treści
+        </a>
         <Header />
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={router.route}
-            initial={{ x: '-100%' }}
-            animate={{ x: 0 }}
-            transition={{ ease: 'linear' }}
-          >
-            <Component {...pageProps} />
-          </motion.div>
-        </AnimatePresence>
+        <main id="main-content">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={router.route}
+              initial={{ x: '-100%' }}
+              animate={{ x: 0 }}
+              transition={{ ease: 'linear' }}
+            >
+              <Component {...pageProps} />
+            </motion.div>
+          </AnimatePresence>
+        </main>
         {router.pathname !== '/' && (
           <Footer/>
         )}

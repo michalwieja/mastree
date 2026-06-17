@@ -72,9 +72,11 @@ function ContactForm() {
 
         <button type="submit" className={styles.button} disabled={loading}>
           {loading ? 'Wysyłanie...' : 'Wyślij'}
+        </button>
+        <div aria-live="polite" aria-atomic="true">
           {successMessage && <p className={styles.successMessage}>{successMessage}</p>}
           {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
-        </button>
+        </div>
       </form>
 
     </div>

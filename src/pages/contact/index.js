@@ -8,9 +8,10 @@ const Contact = () => {
 
     <HorizontalWrapper>
       <div className={styles.contact}>
+        <h1 className={styles.visuallyHidden}>Kontakt</h1>
         <div className={styles.photo}>
           <picture>
-            <img src="/maciek.jpeg" alt="maciek" />
+            <img src="/maciek.jpeg" alt="Maciej Dybula - właściciel Mastree" />
           </picture>
         </div>
         <ContactForm/>

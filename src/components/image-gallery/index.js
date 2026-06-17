@@ -85,11 +85,15 @@ const ImageGallery = ({ data }) => {
           key={index}
           className={styles.thumbnail}
           onClick={() => openLightbox(index)}
+          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') openLightbox(index) }}
+          role="button"
+          tabIndex={0}
+          aria-label={`Zdjęcie ${index + 1}`}
         >
           <picture>
             <img
               src={`/${title}/300/${photo}`}
-              alt={`Photo ${index + 1}`}
+              alt={`${title} - zdjęcie ${index + 1}`}
               className={styles.img}
               loading='lazy'
             />
@@ -110,9 +114,9 @@ const ImageGallery = ({ data }) => {
               closeLightbox()
             }}
           >
-            <span className={styles.closeButton} onClick={closeLightbox}>
+            <button className={styles.closeButton} onClick={closeLightbox} aria-label="Zamknij">
               &times;
-            </span>
+            </button>
             <motion.img
               src={`/${title}/${isMobile ? 300 : 1600}/${photos[isMobile ? 300 : 1600][selectedPhotoIndex]}`}
               alt={`Photo ${selectedPhotoIndex + 1}`}
@@ -136,6 +140,7 @@ const ImageGallery = ({ data }) => {
                 e.stopPropagation()
                 goToPrevious()
               }}
+              aria-label="Poprzednie zdjęcie"
             >
               <ChevronLeft width={isMobile ? 50 : 100} height={isMobile ? 50 : 100}/>
             </motion.button>
@@ -145,6 +150,7 @@ const ImageGallery = ({ data }) => {
                 e.stopPropagation()
                 goToNext()
               }}
+              aria-label="Następne zdjęcie"
             >
               <ChevronRight width={isMobile ? 50 : 100} height={isMobile ? 50 : 100}/>
             </motion.button>

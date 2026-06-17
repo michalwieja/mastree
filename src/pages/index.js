@@ -21,30 +21,35 @@ export default function Home() {
     const hasSecondLine = slide.title2ndLine
 
     return (
-      <div className={styles.title}>
+      <h2 className={styles.title}>
         {isActive ? (
           hasSecondLine ? (
-            <div>
-              <div>{slide.title}</div>
-              <div>{slide.title2ndLine}</div>
-            </div>
+            <span>
+              <span>{slide.title}</span>
+              <span>{slide.title2ndLine}</span>
+            </span>
           ) : (
             slide.title
           )
         ) : (
           slide.shortTitle
         )}
-      </div>
+      </h2>
     )
   }
 
   return (
     <div className={styles.wrapper}>
+      <h1 className="visuallyHidden">Mastree</h1>
       {slides.map((slide, index) => (
         <div
           key={index}
           className={clsx(styles.slide, slide.id===activeId && styles.active)}
           onClick={()=>handleClick(slide.id)}
+          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleClick(slide.id) }}
+          role="button"
+          tabIndex={0}
+          aria-label={slide.title}
           style={{
             backgroundImage: `url(${slide.url})`,
             backgroundPosition: 'center',

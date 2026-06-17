@@ -4,14 +4,14 @@ function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <p>
         &copy;
         {currentYear}
         {' '}
         MASTREE
       </p>
-    </div>
+    </footer>
   )
 }
 
