@@ -1,5 +1,5 @@
 .contact {
-  padding-top: 10vh;
+  padding-top: max(10vh, 90px);
   display: flex;
   min-height: 100vh;
   min-height: 100dvh;
@@ -30,7 +30,7 @@
 
 @media (max-width: 600px) {
   .contact {
-    padding-top: 20vh;
+    padding-top: max(24vh, 200px);
     flex-direction: column;
     align-items: unset;
   }

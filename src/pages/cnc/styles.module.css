@@ -1,5 +1,5 @@
 .cnc {
-  padding-top: 12vh;
+  padding-top: max(12vh, 90px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +17,6 @@
 
 @media (max-width: 600px) {
   .cnc {
-    padding-top: 22vh;
+    padding-top: max(26vh, 200px);
   }
 }

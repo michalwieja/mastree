@@ -23,6 +23,7 @@ const EUFunds = () => {
 
           <div className={styles.textContent}>
             <p className={styles.intro}>
+              W oparciu o Działanie 10.03 Wsparcie MŚP na rzecz transformacji<br />
               Firma Mastree Maciej Dybula uzyskała dotację z Unii Europejskiej na projekt
               &bdquo;Dywersyfikacja oferty przedsiębiorstwa dzięki nabyciu nowoczesnych środków
               trwałych umożliwiających rozwój rzemiosła.&rdquo;
