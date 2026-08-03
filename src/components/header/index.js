@@ -22,6 +22,7 @@ const Header = () => {
           </Link>
           <Link href="/eufunds" className={styles.euLink}>
             <img src="/mastree-fundusze.jpeg" alt="Fundusze Europejskie" className={styles.euIcon} />
+            <span className={styles.euText}>Fundusze Europejskie</span>
           </Link>
           <div className={styles.socials}>
             {socials.map((social, index) => (
