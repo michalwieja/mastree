@@ -47,7 +47,7 @@ function ContactForm() {
     <div className={styles.contactForm}>
       <div className={styles.address}>
         <p>Maciej Dybula</p>
-        <p>ul. Kościuszki 229, 40-600 Katowice</p>
+        <p>ul. Wygoda 2, 41-208 Sosnowiec</p>
         <p>
           <a href={phone.url} target='_blank'>{phone.url}</a>
         </p>
