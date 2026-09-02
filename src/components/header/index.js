@@ -21,8 +21,8 @@ const Header = () => {
             </div>
           </Link>
           <Link href="/eufunds" className={styles.euLink}>
-            <img src="/mastree-fundusze.jpeg" alt="Fundusze Europejskie" className={styles.euIcon} />
-            <span className={styles.euText}>Fundusze Europejskie</span>
+            <img src="/eu-flag.png" alt="Flaga Unii Europejskiej" className={styles.euIcon} />
+            <span className={styles.euText}>Unia Europejska</span>
           </Link>
           <div className={styles.socials}>
             {socials.map((social, index) => (

@@ -4,7 +4,7 @@
   background: #444444;
   z-index: 10;
   height: 10vh;
-  min-height: 70px;
+  min-height: 78px;
 }
 
 .wrapper {
@@ -48,7 +48,7 @@
 .euIcon {
   height: auto;
   width: auto;
-  max-height: 42px;
+  max-height: 56px;
   object-fit: contain;
 }
 
@@ -93,7 +93,7 @@
   }
 
   .euIcon {
-    max-height: 36px;
+    max-height: 46px;
   }
 
   .euText {
